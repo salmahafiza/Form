@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registred</title>
+    
+</head>
+<body>
+    <style>
+        .icon-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px; /* Adjust the padding to control the space between the icon and text */
+    font-size: 16px;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    width: 20px; /* Adjust the width and height to fit your icon size */
+    height: 20px;
+}
+
+.Login_container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px gray(0, 0, 0, 0.5);
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    height: 400px;
+    width: 400px;
+}
+button.log {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: gray;
+    font-size: 15px;
+}
+.main {
+    display: flex;
+    margin: 0;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 200vh;
+
+    margin-left: 0px;
+    margin-right: 0;
+}
+
+
+    </style>
+ 
+    <div class="main">
+        <div class="empty"></div>
+ 
+            <div class="Login_container">
+            <form action="" method="post">
+                <h2> Login</h2> 
+
+                <div class="form-group">
+
+                    <label for="username" class="icon-label"  >
+                        <img src="./username.png" alt="User Icon" class="icon">
+                        Username:
+                    </label>
+                    <br>
+                    <input id="username" type="username" required placeholder="username"> <br>
+                    <br>
+                    <label for="Password" class="icon-label"> <img src="./pass.png" alt="pass" class="icon"> Password:</label> <br>
+                    <input id="Password" type="password" required placeholder="password"> <br>
+
+                </div>
+                <br>
+                <button class="log">Log in</button> <hr>
+                
+               </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
